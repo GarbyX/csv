@@ -1,0 +1,85 @@
+# -----------------------------------------------------------------------------
+# Spring Boot / Java / Maven / Gradle
+# -----------------------------------------------------------------------------
+
+# Compiled class files
+target/
+build/
+*.class
+
+# Package Files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# Maven
+# Note: Maven's "target" folder is already included above.
+
+# Gradle
+.gradle
+!src/*/resources/*.jar
+/bin/
+
+# Log Files
+*.log
+log/
+logs/
+
+# Test-related files
+/test-output/
+/junit-output/
+
+# -----------------------------------------------------------------------------
+# OS/IDE Files (macOS & IntelliJ)
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# IntelliJ IDEA (Mac/Windows/Linux)
+# The .idea folder contains project settings, including local history and run configurations.
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Local History files
+.history
+.sublime-workspace
+.metadata
+
+# Local Run Configurations (often specific to developer's machine)
+*.run.xml
+
+# -----------------------------------------------------------------------------
+# Sensitive Configuration and Local Environment
+# -----------------------------------------------------------------------------
+
+# Configuration that may contain sensitive data (like your environment variables)
+# If using properties files for local testing
+application-local.properties
+application-dev.properties
+application-test.properties
+
+# Files that contain environment variables used in your IntelliJ setup
+# **Crucial for your use case (DB_USERNAME, DB_PASSWORD):**
+# Prevents committing the specific environment variables you set in IntelliJ's Run Configuration.
+# Spring Boot will still load the application.yaml file.
+*.yaml
+*.yml
+!application.yaml # DO NOT ignore the main application file
+!application.yml  # DO NOT ignore the main application file
+
+# Local files containing environment variable values (if you used a .env file)
+.env
+.env.*
+/.idea/compiler.xml
